@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Change background color in menu */
+
+#menu-primary-menu {
+    background-color: #2caee2;
+}
+
+.wp-block-columns {
+    align-items: stretch !important;
+
+}
+
+/* Banner image in header*/
+.site-header {
+    background-image:  linear-gradient(to right, rgba(3, 15, 39, 0.3), rgba(3, 15, 39, 0.7)), url('../src/images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    background-position: top center;
+}
+
+.breadcrumbs {
+    color: #fff !important;
+}
+.breadcrumbs a{
+    color: #fff !important;
+}
+/*Banner Count*/
+.banner-count {
+    background-image:  linear-gradient(to right, rgba(3, 15, 39, 0.3), rgba(3, 15, 39, 0.7)), url('../src/images/banner-count.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-position: top center;
+}
+
+/*Center Footer Widget 2*/
+.footer-widget-1, .footer-widget-2, .footer-widget-3 {
+    display: flex;
+    justify-content: flex-start;
+    @media only screen and (min-width: 768px){
+        justify-content: center;
+        }
+}
+.widget-title {
+    margin-bottom: 4px !important;
+}
+
+ul {
+    list-style-type: none !important;
+    margin: 0 !important;
+}
+
+
+/*Hide flag in Leaflet*/
+.leaflet-control a svg {
+    display: none !important;
+}
+
+/* Hide widget title in home page*/
+.widget_categories .widget-title {
+    display: none;
+}
+
+.widget_categories ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 36px !important;
+    width: 100%;
+}
+
+.widget_categories ul li {
+    margin: 10px 18px 10px 18px !important;
+    padding: 10px 14px 10px 14px;
+    box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: var(--background);
+    font-family: var(--roboto);
+    font-weight: 500;
+}
+
+li[class*="current-cat"] {
+    background: #2caee2 !important;
+}
+
+li[class*="current-cat"] a  {
+    color: #fff;
+}
+
+.widget_categories ul li:hover {
+    background: var(--primary);
+    cursor: pointer;
+}
+
+.widget_categories ul li:hover a {
+    color: #fff;
+}
+
+.inside-left-sidebar .widget_categories{
+    padding-top: 0 !important;
+}

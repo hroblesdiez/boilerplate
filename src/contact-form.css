@@ -1,0 +1,127 @@
+[type="submit"] {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* FORM ELEMENTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.form-with-animated-labels .form-wrapper {
+    position: relative;
+}
+
+.form-with-animated-labels .form-wrapper + .form-wrapper {
+    margin-top: 40px;
+}
+
+.form-with-animated-labels [type="text"],
+.form-with-animated-labels [type="email"],
+.form-with-animated-labels textarea {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--paragraph);
+    background: var(--background);
+    font-size: 18px;
+}
+
+.form-with-animated-labels textarea {
+    height: 150px;
+}
+
+.form-with-animated-labels [type="text"]:focus,
+.form-with-animated-labels [type="email"]:focus,
+.form-with-animated-labels textarea:focus {
+    border-color: var(--primary);
+}
+
+.form-with-animated-labels label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    font-size: 18px;
+    transform: translateY(-50%);
+    color: var(--background);
+    transition: all 0.25s ease-in-out;
+    visibility: hidden;
+}
+
+.form-with-animated-labels .form-textarea-wrapper label {
+    top: 10px;
+    transform: none;
+}
+
+.form-with-animated-labels label.focused {
+    top: -22px;
+    transform: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--heading);
+    visibility: visible;
+}
+
+.form-with-animated-labels [type="submit"] {
+
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 55%;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    color: var(--white);
+    background: var(--primary);
+}
+@media  screen and (min-width: 536px)  {
+    .form-with-animated-labels [type="submit"] {
+        width: 35%;
+    }
+}
+
+.form-with-animated-labels [type="submit"]:hover {
+    background: var(--background);
+}
+
+.form-with-animated-labels .form-submit-wrapper svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(40deg);
+    opacity: 0.75;
+    fill: var(--white);
+    width: 30px;
+    height: 30px;
+}
+
+.form-with-animated-labels .wpcf7-form-control-wrap {
+    position: static;
+}
+
+.form-with-animated-labels .wpcf7-not-valid-tip {
+    position: absolute;
+    bottom: 100%;
+    right: 10px;
+    font-size: 12px;
+}
+
+
+/* OUTPUT MESSAGES CF7
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wpcf7 form .wpcf7-response-output {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--primary);
+}
