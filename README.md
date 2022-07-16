@@ -2,7 +2,7 @@
 
 <p>This is a child theme for the GeneratePress WordPress theme. It can be use as a boilerplate for a new project.</p>
 
-<h1>Stack</h1>
+<h1>Technologies</h1>
 <div>
   <img src="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original.svg" title="Webpack" alt="Webpack" width="40" height="40"/>&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg" title="Tailwind" alt="Tailwind" width="40" height="40"/>&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;
